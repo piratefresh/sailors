@@ -1,0 +1,29 @@
+@import 'variables';
+
+.contact {
+    padding: 0;
+    flex-direction: row;
+    border-top: 5px solid $yellow;
+    border-bottom: 5px solid $yellow;
+
+    .content-area {
+        flex: 1 1 50%;
+        background-color: $purple;
+        padding: 5%;
+    }
+    @media (max-width: 35em) {
+        .content-area {
+            flex: 1 1 25%;
+        }
+    }
+}
+#map {
+    flex: 1 1 50%;
+    background-color: $yellow;
+    align-self: stretch;
+}
+@media (max-width: 35em) {
+    #map {
+        flex: 1 1 75%;
+    }
+}

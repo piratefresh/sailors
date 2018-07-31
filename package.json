@@ -1,0 +1,17 @@
+{
+  "name": "sailorstheme",
+  "version": "1.0.0",
+  "description": "sailors theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+.contact {
+  padding: 0;
+  flex-direction: row;
+  border-top: 5px solid #e7af36;
+  border-bottom: 5px solid #e7af36; }
+  .contact .content-area {
+    flex: 1 1 50%;
+    background-color: #69306D;
+    padding: 5%; }
+  @media (max-width: 35em) {
+    .contact .content-area {
+      flex: 1 1 25%; } }
+
+#map {
+  flex: 1 1 50%;
+  background-color: #e7af36;
+  align-self: stretch; }
+
+@media (max-width: 35em) {
+  #map {
+    flex: 1 1 75%; } }

@@ -1,0 +1,24 @@
+@import 'variables';
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+    h3.title {
+        font: bold 6rem 'Bowlby One SC', cursive;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        margin: 0;
+    }
+    h4.title{
+        margin: 0;
+        padding: 0;
+    }
+    @media (max-width: 35em) {
+        h3.title {
+            font-size: 3rem;
+        }
+    }
+}

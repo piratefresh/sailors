@@ -1,0 +1,54 @@
+@import "variables";
+
+.menus {
+  background: 
+    /* top, transparent red */ linear-gradient(
+      rgba(105, 48, 109, 0.8),
+      rgba(105, 48, 109, 0.8)
+    ),
+    url(#{$assetPath}/happy-bg.jpg);
+  background-size: cover;
+  z-index: -1;
+  height: 100%;
+  .menu-selection-grid {
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+      "food drink"
+      "food drink";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5%;
+    position: relative;
+    img {
+      height: 60vh;
+      object-fit: cover;
+      width: 100%;
+      opacity: 0.7;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border: 5px solid $yellow;
+    }
+    .menu-card-desc {
+      z-index: 2;
+      font-weight: 500;
+      h4 {
+        color: $yellow;
+      }
+    }
+  }
+
+  @media (max-width: 65em) {
+    .menu-selection-grid {
+      grid-template-areas:
+        "food"
+        "drink";
+      grid-template-columns: minmax(300px, 1fr);
+    }
+  }
+  @media (max-width: 35em) {
+    .menu-card-desc p {
+      padding-left: 5%;
+      font-weight: 500;
+    }
+  }
+}

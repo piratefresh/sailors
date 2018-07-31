@@ -1,0 +1,53 @@
+@import "variables";
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  h4 {
+    color: $yellow;
+  }
+  .hero-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background: 
+        /* top, transparent red */ linear-gradient(
+        rgba(32, 32, 32, 0.55),
+        rgba(26, 26, 26, 0.55)
+      ),
+      url(#{$assetPath}/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  .hero-content-area {
+    color: $white;
+    overflow: hidden;
+    .header-info {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .hero-content-area p {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 45em) {
+    .hero {
+      width: 100vw;
+      .hero-content-area {
+        .header-info {
+          flex-direction: column;
+          padding: 0 5%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import "variables";
+
+.mini-about {
+  flex-direction: row;
+  padding: 0;
+  height: 70vh;
+
+  .mini-descrip {
+    flex: 4 1 50%;
+    position: relative;
+    background-color: #f7f7f7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e2e2e3' fill-opacity='0.74' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    height: 100%;
+    .content-area {
+      margin-top: 5%;
+      color: $purple;
+      width: 90%;
+      padding: 0 5%;
+      h4 {
+        font-size: 18px;
+        color: $grey;
+      }
+      h3 {
+        margin: 0;
+      }
+      p {
+        color: $grey;
+      }
+    }
+  }
+
+  .membership {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 25%;
+    width: 100%;
+    background: 
+        /* top, transparent red */ linear-gradient(
+        rgba(165, 102, 139, 0.8),
+        rgba(165, 102, 139, 0.8)
+      ),
+      url(#{$assetPath}/table1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 70vh;
+    .content-area {
+      margin-top: 5%;
+      color: $white;
+      width: 90%;
+      padding: 0 5%;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: $white;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .friendly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 25%;
+    background-image: url(#{$assetPath}/friendly.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 70vh;
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+    }
+    h5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: normal 20px "Open Sans", sans-serif;
+      letter-spacing: 5px;
+    }
+  }
+  .content-area {
+    font: bold 40px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: $white;
+    width: 100%;
+    padding: 25px;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 65em) {
+  .mini-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+@media (max-width: 65em) {
+  .mini-about {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+
+.news {
+  height: 100%;
+
+  h2 {
+    font-weight: bold;
+    margin: 2% 0;
+  }
+  h3 {
+    color: $yellow;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .lastest-news {
+      border-right: $yellow dotted 1px;
+    }
+    .upcoming-events {
+      padding-left: 5%;
+    }
+    h3 {
+      margin: 0;
+    }
+    h5 {
+      color: #000;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 65em) {
+  .news {
+    .news-grid {
+      grid-template-columns: 1fr;
+      .upcoming-events {
+        padding-left: 0;
+      }
+      .lastest-news {
+        border-right: none;
+      }
+    }
+  }
+}

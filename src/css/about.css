@@ -1,0 +1,78 @@
+.mini-about {
+  flex-direction: row;
+  padding: 0;
+  height: 70vh;
+}
+.mini-about .mini-descrip {
+  flex: 4 1 50%;
+  position: relative;
+  background-color: #f7f7f7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e2e2e3' fill-opacity='0.74' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  height: 100%;
+}
+.mini-about .mini-descrip .content-area {
+  color: #69306d;
+}
+.mini-about .mini-descrip .content-area h4 {
+  font-size: 18px;
+  color: #555;
+}
+.mini-about .mini-descrip .content-area p {
+  color: #555;
+}
+.mini-about .membership {
+  flex: 1 1 25%;
+  width: 100%;
+  background: linear-gradient(
+      rgba(165, 102, 139, 0.8),
+      rgba(165, 102, 139, 0.8)
+    ),
+    url(../images/table1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.mini-about .friendly {
+  flex: 1 1 25%;
+  background-image: url(../images/friendly.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.mini-about .friendly i {
+  justify-content: center;
+  align-items: center;
+}
+.mini-about .friendly h4 {
+  letter-spacing: 2px;
+}
+.mini-about .friendly h5 {
+  font: normal 20px "Open Sans", sans-serif;
+  letter-spacing: 5px;
+}
+.mini-about .content-area {
+  font: bold 40px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  padding: 25px;
+}
+.mini-about .content-area p {
+  font-size: 16px;
+}
+
+@media (max-width: 65em) {
+  .mini-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+@media (max-width: 65em) {
+  .mini-about {
+    width: 100%;
+  }
+}
